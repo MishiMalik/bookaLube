@@ -99,7 +99,11 @@ body {
   top: 45px;
   cursor: pointer;
 }
-
+.available-seat{
+  border: 1px solid #2E2C34 !important;
+  padding: 3px 5px;
+  border-radius: 3px;
+}
 
 .main-btn {
     border-radius: 6px;
@@ -145,7 +149,6 @@ body {
     color: var(--White, #FFF) !important;
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
-
     /* SB - Text */
     font-family: Poppins;
     font-size: 14px;
@@ -153,7 +156,6 @@ body {
     font-weight: 600;
     line-height: 140%;
     /* 19.6px */
-    border: none;
     text-decoration: none;
 }
 
@@ -841,4 +843,19 @@ text-decoration: none;
  }
  .active-settings-nav a{
    color:#2E2C34 !important;
+ }
+ .loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
  }

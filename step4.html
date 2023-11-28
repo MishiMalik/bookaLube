@@ -168,6 +168,10 @@ document.addEventListener("DOMContentLoaded", function () {
   
         eventEl.querySelector(".event-border").style.backgroundColor =
           eventBorderColor;
+
+          if(eventTitle == "Available") {
+            eventEl.querySelector('strong').classList.add('available-seat')
+          }
       },
       events: [
         {
@@ -195,6 +199,7 @@ document.addEventListener("DOMContentLoaded", function () {
           //   category: "Accounting",
           },
           {
+            className:"available-seat",
             title: "Available",
             start: "2023-11-29T09:00:00", // Start date and time in ISO format
             end: "2023-11-29T09:00:00", // End date and time in ISO format
