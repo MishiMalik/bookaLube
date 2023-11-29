@@ -13,6 +13,8 @@
         rel="stylesheet">
     <!-- font awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- style -->
     <link rel="stylesheet" href="assets/css/typography.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -20,27 +22,27 @@
     <title>Book a Lube</title>
 </head>
 
-<body>
+<body style="overflow-y: hidden;">
     <div class="container">
         <div class="row mt-4" >
            
             <div class="col-lg-8 col-md-10 mx-auto mt-3">
-                <div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 100vh ;">
+                <div class="d-flex flex-column justify-content-center align-items-center " style="min-height: 90vh ;">
                     <img src="assets/images/Group 1 (2) 1 (1).png" alt="">
-                    <img src="assets/images/Frame 1597882847.png" alt="" class="mt-2 mb-4">
-                    <a href="sign-in.html" class="main-btn2" style="width: 260px !important;">Sign In</a>
-                    <div class="my-3"><span>or</span></div>
-                    <a href="sign-up.html" class="main-btn-blank" style="width: 260px !important;">Sign Up</a>
+                    <img src="assets/images/Frame 1597882847.png" alt="" class="mt-2 mb-4" data-aos="fade-up" data-aos-delay="1500">
+                    <a href="sign-in.html" class="main-btn2" style="width: 260px !important;" data-aos="fade-up" data-aos-delay="2500">Sign In</a>
+                    <div class="my-2" data-aos="fade-up" data-aos-delay="2500"><span>or</span></div>
+                    <a href="sign-up.html" class="main-btn-blank" style="width: 260px !important;" data-aos="fade-up" data-aos-delay="2500">Sign Up</a>
                 </div>
             </div>
         </div>
         
     </div>
 
-    <div class="loader">
-        <img src="assets/images/Group 1 (2) 1 (1).png" alt="">
-       <img src="assets/images/Frame 1597882847.png" alt="" class="mt-4 ">
-    </div>
+    <!-- <div class="loader">
+        <img src="assets/images/Group 1 (2) 1 (1).png" alt="" >
+       <img src="assets/images/Frame 1597882847.png" alt="" class="mt-4 "  data-aos="fade-up" data-aos-delay="1500">
+    </div> -->
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
         integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
@@ -52,6 +54,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!-- js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
         <script>
             // Wait for the DOM to be fully loaded
             document.addEventListener('DOMContentLoaded', function () {
@@ -64,6 +69,9 @@
                 }, 2000); // 10 seconds in milliseconds
             });
         </script>
+        <script>
+            AOS.init();
+          </script>
 </body>
 
 </html>

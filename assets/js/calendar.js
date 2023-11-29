@@ -5,13 +5,13 @@ var Cal = function(divId) {
   
     // Days of week, starting on Sunday
     this.DaysOfWeek = [
-      'Sun',
-      'Mon',
-      'Tue',
-      'Wed',
-      'Thu',
-      'Fri',
-      'Sat'
+      'S',
+      'M',
+      'T',
+      'W',
+      'T',
+      'F',
+      'S'
     ];
   
     // Months, stating on January

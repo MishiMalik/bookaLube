@@ -70,8 +70,8 @@
               <div class="container">
                  
 
-                <div class="blushed-card mt-4 mb-5" style="border-radius: 4px;
-                border: 1px solid var(--fill-dark-dark-5, #EBEAED);
+                <div class="blushed-card  mb-5" style="border-radius: 4px;
+                border: 0px solid var(--fill-dark-dark-5, #EBEAED);
                 background: var(--fill-white-white, #FFF);">
                     <div class="table-responsive">
                         <div id='calendar' class="dashboard-table-lg"></div>
@@ -115,14 +115,17 @@
     <!-- <script src="assets/js/calendar.js"></script>
     <script src="https://fullcalendar.io/releases/fullcalendar/3.10.0/lib/moment.min.js"></script>
     <script src="https://fullcalendar.io/releases/fullcalendar/3.10.0/lib/jquery.min.js"></script>
+
     <script src="https://fullcalendar.io/releases/fullcalendar/3.10.0/fullcalendar.min.js"></script> -->
+ 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     var calendarEl = document.getElementById("calendar");
     var calendar = new FullCalendar.Calendar(calendarEl, {
       initialView: "timeGridWeek",
       headerToolbar: {
-        left: "title prev,next",
+        center:"title",
+        left: "",
         right: "dayGridMonth,timeGridWeek,timeGridDay today",
       },
       titleFormat: {

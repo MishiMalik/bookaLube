@@ -20,7 +20,7 @@
     <title>Book a Lube</title>
 </head>
 
-<body>
+<body class="" style="min-height: 110vh;">
     <nav class="navbar" style="background-color: #FBFAFC;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -57,83 +57,85 @@
             </div>
             <div class="col-lg-6 col-md-10 mx-auto mt-lg-3">
                 <form action="">
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item" id="accordionItem">
-                           <button type="button" class="trash-form"> <img src="assets/images/trash.svg" alt=""></button>
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Vehicle Information 
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <div>
-                                        <div class="mb-3 lube-input lube-input2 ">
-                                            <label for="exampleFormControlInput1 "
-                                                class="form-label mb-0 text-end me-2">Car Nick
-                                                Name</label>
-                                            <div class="position-relative w-100">
-                                                <input type="text" class="form-control" id="exampleFormControlInput1"
-                                                    placeholder="Enter Name">
+                    <div style="min-height: 55vh;">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item" id="accordionItem">
+                               <button type="button" class="trash-form"> <img src="assets/images/trash.svg" alt=""></button>
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Vehicle Information 
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div>
+                                            <div class="mb-3 lube-input lube-input2 ">
+                                                <label for="exampleFormControlInput1 "
+                                                    class="form-label mb-0 text-end me-2">Car Nick
+                                                    Name</label>
+                                                <div class="position-relative w-100">
+                                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                        placeholder="Enter Name">
+                                                </div>
                                             </div>
+    
+                                            <div class="mb-3 lube-input lube-input2 ">
+                                                <label class="form-label mb-0 text-end me-2">Year</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Select Year</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+    
+                                            <div class="mb-3 lube-input lube-input2 ">
+                                                <label class="form-label mb-0 text-end me-2">Make</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Select Make</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+    
+                                            <div class="mb-3 lube-input lube-input2 ">
+                                                <label class="form-label mb-0 text-end me-2">Model</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Select Model</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+    
+                                            <div class="mb-3 lube-input lube-input2 ">
+                                                <label class="form-label mb-0 text-end me-2">Engine</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Select Engine</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+    
+                                            </div>
+    
+                                            <div class="d-flex align-items-start justify-content-end info-div ms-auto mb-3">
+                                                <img src="assets/images/info.svg" alt="" class="me-1 pt-1">
+                                                <p class="text mb-0 pb-0 text-start">If engine size is unknow, we will
+                                                    update your
+                                                    profile after your first visit</p>
+                                            </div>
+    
+    
                                         </div>
-
-                                        <div class="mb-3 lube-input lube-input2 ">
-                                            <label class="form-label mb-0 text-end me-2">Year</label>
-                                            <select class="form-select" aria-label="Default select example">
-                                                <option selected>Select Year</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="mb-3 lube-input lube-input2 ">
-                                            <label class="form-label mb-0 text-end me-2">Make</label>
-                                            <select class="form-select" aria-label="Default select example">
-                                                <option selected>Select Make</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="mb-3 lube-input lube-input2 ">
-                                            <label class="form-label mb-0 text-end me-2">Model</label>
-                                            <select class="form-select" aria-label="Default select example">
-                                                <option selected>Select Model</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="mb-3 lube-input lube-input2 ">
-                                            <label class="form-label mb-0 text-end me-2">Engine</label>
-                                            <select class="form-select" aria-label="Default select example">
-                                                <option selected>Select Engine</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-
-                                        </div>
-
-                                        <div class="d-flex align-items-start justify-content-end info-div ms-auto mb-3">
-                                            <img src="assets/images/info.svg" alt="" class="me-1 pt-1">
-                                            <p class="text mb-0 pb-0 text-start">If engine size is unknow, we will
-                                                update your
-                                                profile after your first visit</p>
-                                        </div>
-
-
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
-                        
                     </div>
                     <div class="d-flex align-items-center my-5 justify-content-center mx-auto flex-md-row flex-column">
                         <div class="me-md-2 me-0 mb-md-0 mb-3 btn-div">
