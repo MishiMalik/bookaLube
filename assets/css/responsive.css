@@ -36,6 +36,9 @@
       width: 100% !important;
       margin-top: 20px;
    }
+   .main-btn2{
+      width: 100%;
+   }
    .edit{
       position: absolute;
       top: -10px;

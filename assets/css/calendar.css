@@ -52,13 +52,19 @@
     border-radius: 4px;
     cursor: pointer;
   }
+  .select-date{
+    background-color: #39455F;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
   td.not-current {
     color: #c0c0c0;
   }
   td.today {
     font-weight: 700;
-    background-color: #39455F;
-    color: white !important;
+    /* background-color: #39455F; */
+    color: #39455F !important;
     font-size: 1.5em;
     border-radius: 4px;
     cursor: pointer;
