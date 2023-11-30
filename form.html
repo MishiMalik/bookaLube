@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .accordion {
+      display: none;
+    }
+  </style>
+  <title>Dynamic Form with Accordion</title>
+</head>
+<body>
+
+<div id="form-container">
+  <!-- Initial Form -->
+  <form class="form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <button type="button" class="add-more-btn" onclick="addForm()">Add More</button>
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Accordion Container -->
+  <div id="accordion-container"></div>
+</div>
+
+<script>
+  let formCount = 1;
+
+  function addForm() {
+    // Clone the template form
+    const templateForm = document.querySelector('.form');
+    const newForm = templateForm.cloneNode(true);
+    formCount++;
+
+    // Update form IDs to make them unique
+    newForm.id = `form-${formCount}`;
+    newForm.querySelector('label[for="name"]').htmlFor = `name-${formCount}`;
+    newForm.querySelector('#name').id = `name-${formCount}`;
+    newForm.querySelector('label[for="email"]').htmlFor = `email-${formCount}`;
+    newForm.querySelector('#email').id = `email-${formCount}`;
+
+    // Create accordion element
+    const accordion = document.createElement('div');
+    accordion.className = 'accordion';
+    accordion.innerHTML = `
+      <h3>Form ${formCount}</h3>
+      <div id="content-${formCount}">
+        ${newForm.outerHTML}
+      </div>
+    `;
+
+    // Append accordion to the container
+    const accordionContainer = document.getElementById('accordion-container');
+    accordionContainer.appendChild(accordion);
+
+    // Make the accordion collapsible
+    initializeAccordion();
+
+    // Reset the cloned form values
+    newForm.reset();
+  }
+
+  function initializeAccordion() {
+    const accordions = document.querySelectorAll('.accordion');
+    accordions.forEach((accordion) => {
+      accordion.style.display = 'block'; // Display the accordion
+      accordion.querySelector('h3').addEventListener('click', function() {
+        this.classList.toggle('active');
+        const content = this.nextElementSibling;
+        if (content.style.display === 'block') {
+          content.style.display = 'none';
+        } else {
+          content.style.display = 'block';
+        }
+      });
+    });
+  }
+</script>
+
+</body>
+</html>

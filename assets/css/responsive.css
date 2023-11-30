@@ -36,9 +36,7 @@
       width: 100% !important;
       margin-top: 20px;
    }
-   .main-btn2{
-      width: 100%;
-   }
+  
    .edit{
       position: absolute;
       top: -10px;
@@ -67,7 +65,9 @@
  font-size: 14px;
 
  }
-
+ .confirm-modal{
+   width: 95%;
+ }
 }
 @media only screen and (max-width:480px){
    .body-container{
@@ -83,11 +83,14 @@
       background: #fff;
     }
     .main-btn-blank{
-      width: 100% !important;
+      width: 96% !important;
     }
     .btn-div{
-      width: 100%;
+      width: 96%;
     }
+    .main-btn2{
+      width: 96%;
+   }
 }
 @media only screen and (max-width:360px){
    .main-heading{
