@@ -1111,3 +1111,7 @@ body {
 .accordion-body{
   padding-top: 0px !important;
 }
+.main-logo{
+  transform: scale(1.5);
+  transition-duration: 2s;
+}

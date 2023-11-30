@@ -29,20 +29,20 @@
             <div class="col-lg-8 col-md-10 mx-auto mt-3">
                 <div class="d-flex flex-column justify-content-center align-items-center " style="min-height: 90vh ;">
                     <img src="assets/images/Group 1 (2) 1 (1).png" alt="">
-                    <img src="assets/images/Frame 1597882847.png" alt="" class="mt-2 mb-4" data-aos="fade-up" data-aos-delay="1500">
-                    <a href="sign-in.html" class="main-btn2" style="width: 260px !important;" data-aos="fade-up" data-aos-delay="2500">Sign In</a>
-                    <div class="my-2" data-aos="fade-up" data-aos-delay="2500"><span>or</span></div>
-                    <a href="sign-up.html" class="main-btn-blank" style="width: 260px !important;" data-aos="fade-up" data-aos-delay="2500">Sign Up</a>
+                    <img src="assets/images/Frame 1597882847.png" alt="" class="mt-2 mb-4"  data-aos-delay="2000">
+                    <a href="sign-in.html" class="main-btn2" style="width: 260px !important;"  data-aos-delay="3000">Sign In</a>
+                    <div class="my-2"  data-aos-delay="3000"><span>or</span></div>
+                    <a href="sign-up.html" class="main-btn-blank" style="width: 260px !important;"  data-aos-delay="3000">Sign Up</a>
                 </div>
             </div>
         </div>
         
     </div>
 
-    <!-- <div class="loader">
-        <img src="assets/images/Group 1 (2) 1 (1).png" alt="" >
-       <img src="assets/images/Frame 1597882847.png" alt="" class="mt-4 "  data-aos="fade-up" data-aos-delay="1500">
-    </div> -->
+    <div class="loader">
+        <img src="assets/images/Group 1 (2) 1 (1).png" alt=""  class="main-logo">
+       <img src="assets/images/Frame 1597882847.png" alt="" class="mt-4 "  data-aos="fade-up" data-aos-delay="3000">
+    </div>
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
         integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
@@ -62,10 +62,15 @@
             document.addEventListener('DOMContentLoaded', function () {
                 // Get the loader element
                 var loader = document.querySelector('.loader');
-    
+                 var scale = document.querySelector('.main-logo');
                 // Set a timeout to hide the loader after 10 seconds
                 setTimeout(function () {
                     loader.style.display = 'none';
+                }, 4000); // 10 seconds in milliseconds
+
+                 // Set a timeout to hide the loader after 10 seconds
+                 setTimeout(function () {
+                    scale.style.transform = 'scale(1.0)'
                 }, 2000); // 10 seconds in milliseconds
             });
         </script>
