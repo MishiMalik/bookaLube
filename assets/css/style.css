@@ -1108,12 +1108,14 @@ body {
   border-top: 1px solid rgba(207, 207, 207, 0.26);
   padding-top: 15px;
 }
-
-.main-logo{
+.main-logo {
   transform: scale(1.0);
-  transition-duration: 2s;
+  transition: transform 2s ease; /* Added transition property */
 }
-.main-text{
+
+.main-text {
   display: none;
   margin-top: -50px !important;
+  opacity: 0; /* Start with opacity set to 0 for a fade-in effect */
+  transition: opacity 1s ease, transform 0.5s ease; /* Added transition properties */
 }
