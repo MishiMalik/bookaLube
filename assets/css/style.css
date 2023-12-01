@@ -900,11 +900,12 @@ body {
   line-height: normal;
 }
 
-/* .print-btn{
+.print-btn{
   position: absolute;
-  right: 230px;
+  right: -200px;
   width: fit-content !important;
-} */
+  top: 0;
+}
 /* settings */
 .settings-heading {
   color: var(--fill-dark-main-dark, #2E2C34);
@@ -1110,12 +1111,20 @@ body {
 }
 .main-logo {
   transform: scale(1.0);
-  transition: transform 2s ease; /* Added transition property */
+  margin-top: 200px;
+  transition: all 2s ease; /* Added transition property */
 }
 
 .main-text {
-  display: none;
-  margin-top: -50px !important;
-  opacity: 0; /* Start with opacity set to 0 for a fade-in effect */
-  transition: opacity 1s ease, transform 0.5s ease; /* Added transition properties */
+  margin-top: -50px;
+  transform: scale(0);
+  /* display: none; */
+  /* opacity: 0;  */
+  /* Start with opacity set to 0 for a fade-in effect */
+  transition: all 2s ease, /* Added transition properties */
+}
+.back-btn{
+  position: absolute;
+  width: 100px;
+  margin-left: -100px;
 }

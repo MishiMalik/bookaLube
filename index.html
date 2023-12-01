@@ -43,8 +43,8 @@
 
     <div class="loader">
         <img src="assets/images/Group 1 (2) 1 (2).png" alt="" class="main-logo">
-        <img src="assets/images/Frame 1597882849.png" alt="" class="main-text" data-aos-delay="" data-aos="fade-up">
-      </div>
+        <img src="assets/images/Frame 1597882849.png" alt="" class="main-text" >
+    </div>
       
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
@@ -68,11 +68,13 @@
 
   setTimeout(function () {
     scale.style.transform = 'scale(0.7)';
+    scale.style.marginTop = '0px'
   }, 1000);
 
   setTimeout(function () {
-    mainText.style.display = 'block';
-    mainText.style.opacity = '1'; /* Set opacity to 1 to trigger the fade-in effect */
+    mainText.style.transform = 'scale(0.9)';
+    // mainText.style.display = 'block';
+    // mainText.style.opacity = '1'; /* Set opacity to 1 to trigger the fade-in effect */
   }, 2500); /* Adjusted the timing to start after scaling is complete */
 
   setTimeout(function () {
