@@ -343,7 +343,7 @@ body {
 }
 
 .info-div {
-  width: 75%;
+  width: 60%;
 }
 
 .accordion-item {
@@ -1131,4 +1131,9 @@ body {
 }
 .back-sm{
 display: none !important;
+}
+.info-text{
+  position: absolute !important;
+  top: 0;
+  right: -50%;
 }

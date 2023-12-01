@@ -1,9 +1,18 @@
-
-/* @media only screen and (max-width:1300px){
-   .print-btn{
-      right: 120px;
+@media only screen and (max-width:1400px){
+   .info-text{
+       right: -60%;
     }
-} */
+}
+@media only screen and (max-width:1200px){
+   .info-text{
+      position: relative !important;
+       right: 0;
+       left: unset;
+    }
+    .info-div{
+      width: 100%;
+   }
+}
 @media only screen and (max-width:991px){
    .print-btn{
      position: relative;
@@ -25,9 +34,7 @@
     }
 }
 @media only screen and (max-width:767px){
-   .info-div{
-      width: 100%;
-   }
+  
    .button-div{
       position: relative;
    }
