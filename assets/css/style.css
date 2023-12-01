@@ -1126,5 +1126,9 @@ body {
 .back-btn{
   position: absolute;
   width: 100px;
-  margin-left: -100px;
+  margin-left: -120px;
+  height: 100%;
+}
+.back-sm{
+display: none !important;
 }
