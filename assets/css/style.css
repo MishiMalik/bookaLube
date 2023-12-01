@@ -1113,3 +1113,7 @@ body {
   transform: scale(1.0);
   transition-duration: 2s;
 }
+.main-text{
+  display: none;
+  margin-top: -50px !important;
+}

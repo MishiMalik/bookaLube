@@ -41,7 +41,7 @@
 
     <div class="loader">
         <img src="assets/images/Group 1 (2) 1 (2).png" alt=""  class="main-logo">
-       <img src="assets/images/Frame 1597882847.png" alt="" class=" " style="margin-top: -50px;"  data-aos="fade-up" data-aos-delay="3000" >
+       <img src="assets/images/Frame 1597882849.png" alt="" class="main-text" data-aos-delay=""  data-aos="fade-up"  >
     </div>
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
@@ -63,15 +63,24 @@
                 // Get the loader element
                 var loader = document.querySelector('.loader');
                  var scale = document.querySelector('.main-logo');
+                 var mainText = document.querySelector('.main-text')
                 // Set a timeout to hide the loader after 10 seconds
                 setTimeout(function () {
                     loader.style.display = 'none';
-                }, 4000); // 10 seconds in milliseconds
+                }, 5000); // 10 seconds in milliseconds
 
                  // Set a timeout to hide the loader after 10 seconds
                  setTimeout(function () {
-                    scale.style.transform = 'scale(0.6)'
-                }, 2000); // 10 seconds in milliseconds
+                    scale.style.transform = 'scale(0.7)'
+                }, 1000); // 10 seconds in milliseconds
+                 // Set a timeout to hide the loader after 10 seconds
+                 setTimeout(function () {
+                    mainText.style.display = 'block'
+                }, 3000); // 10 seconds in milliseconds
+                // Set a timeout to hide the loader after 10 seconds
+                setTimeout(function () {
+                    mainText.style.transform = 'scale(0.9)'
+                }, 3500); // 10 seconds in milliseconds
             });
         </script>
         <script>
