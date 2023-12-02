@@ -87,7 +87,7 @@
                         </div>
 
                         <!-- form div -->
-                        <div>
+                        <div id="formMain">
                             <div class="form-div" id="formDiv">
                                 <div class="mb-3 lube-input lube-input2 ">
                                     <label for="exampleFormControlInput1 " class="form-label mb-0 text-end me-2">Car
@@ -196,7 +196,7 @@
 
     <!-- Form template -->
     <script type="text/template" id="form_template">
-        <div class="form-div form-div2">
+        <div class="form-div form-div2" id="formDiv">
             <div class="mb-3 lube-input lube-input2 ">
                 <label for="exampleFormControlInput1 "
                     class="form-label mb-0 text-end me-2">Car Nick
@@ -297,25 +297,19 @@
             $('#addMoreBtn').on('click', function () {
                 var accordion = $("#accordionExample");
                 var accordionItem = $('#option_template');
-
+                var infoText = $(".info-text");
+                infoText.css('display','none');
                 var totalItems = accordion.find('.accordion-item').length;
                 // accordionItemTemplate = accordionItem.replaceAll('{accordionCounter}', totalItems + 1);
 
                 var formTemaplte = $('#form_template').html();
 
-                if (accordion.html().trim().length == 0) {
-                    accordionItem = accordionItem.html().replace("{_form}", $("#formDiv").parent().html())
-                    // accordionItem.find('.accordion-body').html($("#formDiv").html())
-                    accordionItem = accordionItem.replaceAll('{accordionCounter}', totalItems + 1)
-                    accordionItem = accordionItem.replaceAll('id="formDiv"', "")
-                    accordion.append(accordionItem)
-                    $("#formDiv").parent().remove()
-                    accordion.after(formTemaplte)
-                } else {
-                    accordionItem = accordionItem.html().replace("{_form}", formTemaplte)
-                    accordionItem = accordionItem.replaceAll('{accordionCounter}', totalItems + 1)
-                    accordion.append(accordionItem)
-                }
+                accordionItem = accordionItem.html().replace("{_form}", $("#formMain").html())
+                accordionItem = accordionItem.replaceAll('{accordionCounter}', totalItems + 1)
+                accordionItem = accordionItem.replaceAll('id="formDiv"', "")
+                accordion.append(accordionItem)
+                $("#formDiv").remove()
+                $("#formMain").append(formTemaplte);
             });
         });
     </script>
