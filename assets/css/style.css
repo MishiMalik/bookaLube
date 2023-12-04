@@ -1137,3 +1137,14 @@ display: none !important;
   top: 0;
   right: -50%;
 }
+.logo-img
+{
+  height: 50px;
+  width: auto;
+}
+.logo-image img{
+  height: 120px;
+}
+.logo-image2 img{
+  height: 170px;
+}
