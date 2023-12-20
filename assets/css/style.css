@@ -1148,3 +1148,6 @@ display: none !important;
 .logo-image2 img{
   height: 170px;
 }
+.referral-fields {
+  display: none;
+}
