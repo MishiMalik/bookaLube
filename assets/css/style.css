@@ -1151,3 +1151,6 @@ display: none !important;
 .referral-fields {
   display: none;
 }
+.modal-done{
+  background-color: gray !important;
+}
